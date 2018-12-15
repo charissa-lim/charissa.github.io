@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+<style>
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ff4593;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+	padding: 14px 32px;
+	width: 250px;
+}
+li a{
+	color: white;
+	text-align: center;
+	display: block;
+	font-size: 15pt;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-family: fantasy;
+}
+
+li:hover{
+	background-color: #ffc2d5;
+}
+
+.quote {
+	text-align: center;
+	background-color: #ffc2d5;
+	height: 200px;
+	margin: 0px;
+}
+
+.quote h3 {
+	padding-top: 100px;
+	margin: 0px;
+}
+
+.content {
+	text-align: center;
+	background-color: #ffc2d5;
+	padding: 0px;
+	margin: 0px;
+	padding: 20px;
+}
+
+.content h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #8e003b;
+  margin: 0px;
+}
+
+.content h2 {
+  text-align: center;
+  color: #8e003b;
+  margin: 0px;
+}
+
+.content p {
+	text-align: center;
+	color: #8e003b;
+	margin: 0px 0 70px 0;
+}
+.footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	padding: 64px 16px 64px 16px;
+}
+.footer i{
+	color: white;
+}
+
+</style>
+
+</head>
+
+
+<body>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="Profile.html">Profile</a></li>
+	<li><a href="Gallery.html">Gallery</a></li>
+	<li><a href="Random.html">Random Thoughts</a></li>
+</ul>
+
+<section>
+	<img class="mySlides" src="pink.jpg" style="width:100%">
+	<img class="mySlides" src="flower.jpg" style="width:100%">
+	<img class="mySlides" src="raspberries.jpg" style="width:100%">
+</section>
+
+<section class="content">
+	<h1>Charissa's Website</h1>
+	<h2>Pink is amazingggggggg</h2>
+</section>
+
+<section class="quote">
+	<h3><i>"There can be no greater gift than that of giving one's time and energy to help others without expecting anything in return."</i></h3> 
+	<h4>-Nelson Mandela</h4>
+</section>
+
+<footer class="footer">
+	<a href="http:/www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+	<a href="http:/www.pinterest.com"><i class="fa fa-pinterest-p"></i></a>
+	<a href="http:/www.twitter.com"><i class="fa fa-twitter"></i></a>
+	<a href="http:/www.youtube.com"><i class="fa fa-youtube"></i></a>
+	<a href="http:/www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+</footer>
+
+<script>
+
+var myIndex = 0;
+slide();
+
+function slide() {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+
+	myIndex++;
+
+	if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+	setTimeout (slide, 3000);
+}
+
+</script>
+
+</body>
+
+</html>
